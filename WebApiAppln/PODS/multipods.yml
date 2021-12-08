@@ -1,0 +1,18 @@
+apiVersion: v2
+kind: Pod
+metadata:
+  name: multi-pod
+  labels:
+    app: web
+spec:
+  containers:
+    - name: web-ctr1
+      image: manishadotnet/k8spratice:webapifork8s
+      ports:
+        - containerPort: 8081
+	
+  containers:
+    - name: web-ctr2
+      image: manishadotnet/k8spratice:apiforangular
+      ports:
+        - containerPort: 8080
