@@ -9,8 +9,7 @@ spec:
     - name: web-ctr1
       image: manishadotnet/k8spratice:webapifork8s
       ports:
-        - containerPort: 8081	
-  containers:
+        - containerPort: 8081 
     - name: web-ctr2
       image: manishadotnet/k8spratice:apiforangular
       ports:
